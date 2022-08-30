@@ -1,0 +1,44 @@
+body {
+  background-image: url(https://th.bing.com/th/id/R.b36473f40e08321ddf4d959e196e852d?rik=Oj3shqCi%2f25FsA&pid=ImgRaw&r=0);
+  background-size: cover;
+}
+
+.scoretext {
+  font-size: 200px;
+}
+
+.light {
+  height: 25vh;
+  width: 25vh;
+  margin-bottom: 2em;
+}
+
+.board {
+  width: 100vh;
+  height: 50vh;
+  background-color: rgba(5, 2, 53, 0.767);
+}
+
+.team1 {
+  background-color: lightgray;
+}
+
+.team2 {
+  background-color: lightgray;
+}
+
+.buttoncolor {
+  background-color: #ec8e00b9;
+}
+
+.buttontextcolor {
+  color: #170FFF;
+}
+
+.marg-l20 {
+  margin-left: 20rem;
+}
+
+.pad-l {
+  padding-left: 2rem;
+}

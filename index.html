@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScoreBoard | Eric</title>
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+  <main>
+    <div class="container-flex d-flex justify-content-center marg-l20">
+      <div class="row">
+        <div class="col-md-12 d-flex board text-light p-5 justify-content-center">
+          <div class="">
+            <button class="text-dark bg-danger" onclick="reset()">RESET</button>
+          </div>
+          <h1 class="px-5">Home</h1>
+          <div class="team1 light">
+            <div class="scoretext text-primary" id="homescore"></div>
+          </div>
+          <h1 class="px-5">Away</h1>
+          <div class="team2 light scoretext text-primary" id="awayscore"></div>
+        </div>
+        <div class="col-md-6 d-flex flex-column">
+          <div class="pb-5">
+            <button class="px-5 py-4 buttoncolor buttontextcolor fs-3" onclick="goalHome()">Home+1</button>
+          </div>
+          <div>
+            <button class="px-5 py-4 buttoncolor buttontextcolor fs-3" onclick="goalHome3()">Home+3</button>
+          </div>
+          <div class="pt-5">
+            <button class="px-5 py-4  buttoncolor buttontextcolor fs-3" onclick="goalHome6()">Home+6</button>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex flex-column pad-l">
+          <div class="pb-5">
+            <button class="px-5 py-4 buttoncolor buttontextcolor fs-3" onclick="goalAway()">Away+1</button>
+          </div>
+          <div>
+            <button class="px-5 py-4 buttoncolor buttontextcolor fs-3" onclick="goalAway3()">Away+3</button>
+          </div>
+          <div class="pt-5">
+            <button class="px-5 py-4  buttoncolor buttontextcolor fs-3" onclick="goalAway6()">Away+6</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+  </main>
+</body>
+
+</html>
